@@ -24,7 +24,8 @@ h2{
 }
 
 .input-datos{
-    width: 35rem
+    width: 35rem;
+    margin-top: 0.2rem;
 }
 .layout{
     color: aliceblue;
