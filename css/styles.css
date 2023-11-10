@@ -9,7 +9,7 @@ html{
 .content{
     padding: 30px;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 1fr 1fr;
 }
 .principal-form{
     display: flex;
@@ -24,7 +24,7 @@ h2{
 }
 
 .input-datos{
-    width: 35rem;
+    width: 90%;
     margin-top: 0.2rem;
 }
 .layout{
