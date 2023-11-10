@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Validación</title>
+</head>
+<body>
+    <div class="content">
+    <form class="principal-form" id="formulario">
+        <h2>Papeleta Pospago</h2>
+        <input type="text" class="input-datos"name="plan" id="plan" placeholder="Ingrese Plan" required>
+        <input type="tel" maxlength="10" class="input-datos"name="dn" id="dn" placeholder="Ingrese DN" required>
+        <input type="tel" maxlength="4" class="input-datos"name="dn4" id="dn4" placeholder="Ingrese Ultimos 4 Dígitos DN" required>
+        <input type="tel" maxlength="10" class="input-datos"name="grabacion" id="grabacion" placeholder="Ingrese Número De Grabación" required>
+        <input type="text" class="input-datos"name="fvc" id="fvc" placeholder="Ingrese FVC" required>
+        <input type="tel" maxlength="4" class="input-datos"name="nip" id="nip" placeholder="Ingrese NIP" required>
+        <input type="text" class="input-datos"name="vigencia" id="vigencia" placeholder="Ingrese Vigencia Del NIP" required>
+        <input type="text" class="input-datos"name="nombres" id="nombres" placeholder="Ingrese Nombre(s)" required>
+        <input type="text" class="input-datos"name="apellido-pat" id="apellido-pat" placeholder="Ingrese Apellido Paterno" required>
+        <input type="text" class="input-datos"name="apellido-mat" id="apellido-mat" placeholder="Ingrese Apellido Materno" required>
+        <input type="text" maxlength="18" class="input-datos"name="curp" id="curp" placeholder="Ingrese CURP" required>
+        <input type="text" class="input-datos"name="user" id="user" placeholder="Ingrese User Login" required>
+        <input type="text" class="input-datos"name="fechanac" id="fechanac" placeholder="Ingrese Fecha De Nacimiento" required>
+        <input type="text" class="input-datos"name="lugarnac" id="lugarnac" placeholder="Ingrese Lugar De Nacimiento" required>
+        <input type="text" maxlength="13" class="input-datos"name="rfc" id="rfc" placeholder="Ingrese RFC" required>
+        <input type="text" class="input-datos"name="calle" id="calle" placeholder="Ingrese Calle" required>
+        <input type="text" class="input-datos"name="numext" id="numext" placeholder="Ingrese Número Exterior" required>
+        <input type="text" class="input-datos"name="numint" id="numint" placeholder="Ingrese Número Interior" required>
+        <input type="text" class="input-datos"name="colfracc" id="colfracc" placeholder="Ingrese Colonia O Fraccionamiento" required>
+        <input type="tel" maxlength="5" class="input-datos"name="cp" id="cp" placeholder="Ingrese Código Postal" required>
+        <input type="text" class="input-datos"name="entrecalles" id="entrecalles" placeholder="Ingrese Entrecalles" required>
+        <input type="text" class="input-datos"name="referencias" id="referencias" placeholder="Ingrese Referencias Del Domicilio" required>
+        <input type="text" class="input-datos"name="del" id="del" placeholder="Ingrese Delegación O Municipio" required>
+        <input type="text" class="input-datos"name="estado" id="estado" placeholder="Ingrese Estado" required>
+        <input type="tel" maxlength="10" class="input-datos"name="contactouno" id="contactouno" placeholder="Ingrese Primer Teléfono De Contacto" required>
+        <input type="tel" maxlength="10" class="input-datos"name="contactodos" id="contactodos" placeholder="Ingrese Segundo Teléfono De Contacto" required>
+        <input type="email" class="input-datos"name="email" id="email" placeholder="Ingrese Correo Electrónico" required>
+        <input type="tel" maxlength="13" class="input-datos"name="idine" id="idine" placeholder="Ingrese ID MX" required>
+        <input type="text" class="input-datos"name="cac" id="cac" placeholder="Ingrese Centro De Atención A Clientes" required>
+        <input type="text" class="input-datos"name="ejecutivo" id="ejecutivo" placeholder="Ingrese Nombre Del Ejecutivo" required>
+        <input type="text" class="input-datos"name="validador" id="validador" placeholder="Ingrese Nombre Del Validador" required>        
+        <div>
+        <button class="btn boton"type="submit">Mostrar</button>
+        <input class="boton left" type="reset" value="Limpiar">
+        </div>
+    </form>
+    <section class="titulos">
+        <div class="margen">
+            <label class="layout">Plan:&nbsp;&nbsp;</label>
+            <label class="layout capitl" id="plan-lo"></label>
+        </div>
+        <div >
+            <label class="layout">DN:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="dn-lo"></>
+        </div>
+        <div >
+            <label class="layout">DN (Últimos 4 Dígitos):&nbsp;&nbsp;</>
+            <label class="layout capitl" id="dn4-lo"></>
+        </div>
+        
+        <div >
+            <label class="layout">Grabación DN:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="grabacion-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">FVC:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="fvc-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">NIP:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="nip-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Vigencia NIP:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="vigencia-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Nombre(s):&nbsp;&nbsp;</>
+            <label class="layout capitl" id="nombres-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Apellido Paterno:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="apellido-pat-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Apellido Materno:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="apellido-mat-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">CURP:&nbsp;&nbsp;</>
+            <label class="layout mayus" id="curp-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">User Login:&nbsp;&nbsp;</>
+            <label class="layout mayus" id="user-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Fecha de Nacimiento:&nbsp;&nbsp;</>
+            <label class="layout mayus" id="fechanac-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Lugar de Nacimiento:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="lugarnac-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">RFC:&nbsp;&nbsp;</>
+            <label class="layout mayus" id="rfc-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Calle:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="calle-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Número Exterior:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="numext-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Número Interior:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="numint-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Colonia o Fraccionamiento:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="colfracc-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">CP:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="cp-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Entrecalles:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="entrecalles-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Referencias:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="referencias-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Delegación o Municipio:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="del-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Estado:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="estado-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Tel Contacto 1:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="contactouno-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Tel Contacto 2:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="contactodos-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Correo Electrónico:&nbsp;&nbsp;</>
+            <label class="layout minus" id="email-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">ID INE:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="idine-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">CAC Movistar:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="cac-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Ejecutivo:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="ejecutivo-lo"></>
+        </div>
+
+        <div >
+            <label class="layout">Validador:&nbsp;&nbsp;</>
+            <label class="layout capitl" id="validador-lo"></>
+        </div>
+
+    </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

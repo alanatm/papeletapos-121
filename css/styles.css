@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #24303c;
+}
+.content{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.principal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+h2{
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+.input-datos{
+    width: 35rem
+}
+.layout{
+    color: aliceblue;
+}
+.capitl{
+    text-transform: capitalize;
+}
+
+.para-copiar{
+    display: flex;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.margen{
+    margin-top: 2.9rem;
+}
+
+.mayus{
+    text-transform: uppercase;
+}
+
+.minus{
+    text-transform: lowercase;
+}
+div{
+    margin-top: 1px;
+}
+
+.boton{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5%;
+    background-color: rgb(109, 109, 109);
+    color: white;
+    font-size: large;
+    cursor: pointer; 
+}
+
+.boton:hover{
+    background-color: rgb(75, 74, 74);
+}
+
+.boton:active {
+    transform: scale(0.98);
+}
+
+.left{
+    margin-left: 1rem;
+}
+
+.titulos{
+    padding-left: 5rem;
+}
