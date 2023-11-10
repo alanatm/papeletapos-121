@@ -30,6 +30,9 @@ h2{
 .layout{
     color: aliceblue;
 }
+.minus{
+    text-transform: lowercase;
+}
 .capitl{
     text-transform: capitalize;
 }
@@ -50,9 +53,7 @@ h2{
     text-transform: uppercase;
 }
 
-.minus{
-    text-transform: lowercase;
-}
+
 div{
     margin-top: 1px;
 }
