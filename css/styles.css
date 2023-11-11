@@ -78,9 +78,13 @@ div{
 }
 
 .left{
-    margin-left: 1rem;
+    margin-left: 10rem;
 }
 
 .titulos{
     padding-left: 5rem;
+}
+
+.marginleft{
+    padding-left: 15px;
 }
