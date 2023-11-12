@@ -98,3 +98,6 @@ div{
 .titulos{
     margin-left: 1rem;
 }
+.noselect{
+    user-select: none;
+}
