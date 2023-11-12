@@ -239,6 +239,7 @@ function validarFormulario(e) {
   const validadormin = capitalizartexto(validador);
   validadorr.textContent = `${validadormin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
+  //Info para botón copiar
   copiapsuper.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}`;
   copiapventa.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nDN (ÚLTIMOS 4 DIGITOS):\t${dn4min}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}\nFECHA DE NACIMIENTO:\t${fechanacmin}\nLUGAR DE NACIMIENTO:\t${lugarnacmin}\nRFC:\t${rfcmin}\nCALLE:\t${callemin}\nNÚMERO EXT:\t${numextmin}\nNÚMERO INT:\t${numintmin}\nCOLONIA O FRACC:\t${colfraccmin}\nCP:\t${cpmin}\nENTRE CALLES:\t${entrecallesmin}\nREFERENCIAS:\t${referenciasmin}\nDELEGACIÓN/MUNICIPIO:\t${delmin}\nESTADO:\t${estadomin}\nTEL CONTACTO 1:\t${contactounomin}\nTEL CONTACTO 2:\t${contactodosmin}\nEMAIL:\t${emailmin}\nID INE:\t${idinemin}\nCAC MOVISTAR:\t${cacmin}\nEJECUTIVO:\t${ejecutivomin}\nVALIDADOR:\t${validadormin}`;
 }
