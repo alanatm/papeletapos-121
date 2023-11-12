@@ -14,9 +14,10 @@ html{
 .principal-form{
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    align-items: self-end;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     user-select: none;
+    
 }
 h2{
     color: aliceblue;
@@ -26,6 +27,7 @@ h2{
 .input-datos{
     width: 90%;
     margin-top: 0.2rem;
+    height: 1.19rem;
 }
 .layout{
     color: aliceblue;
@@ -46,7 +48,7 @@ h2{
 }
 
 .margen{
-    margin-top: 2.9rem;
+    margin-top: 3rem;
 }
 
 .mayus{
@@ -55,7 +57,7 @@ h2{
 
 
 div{
-    margin-top: 1px;
+    margin-top: 4.19px;
 }
 
 .boton{
@@ -67,6 +69,7 @@ div{
     color: white;
     font-size: large;
     cursor: pointer; 
+    
 }
 
 .boton:hover{
@@ -81,15 +84,17 @@ div{
     margin-left: 10rem;
 }
 
-.titulos{
-    padding-left: 5rem;
-}
 
 .marginleft{
     padding-left: 15px;
 }
 .copia{
     width: 12rem;
-    margin-top: 7rem;
+    margin-top: 1.4rem;
+    margin-left: 7rem;
     
+}
+
+.titulos{
+    margin-left: 1rem;
 }
