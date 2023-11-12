@@ -41,9 +41,9 @@
         <input type="text" class="input-datos"name="cac" id="cac" placeholder="Ingrese Centro De Atención A Clientes" required>
         <input type="text" class="input-datos"name="ejecutivo" id="ejecutivo" placeholder="Ingrese Nombre Del Ejecutivo" required>
         <input type="text" class="input-datos"name="validador" id="validador" placeholder="Ingrese Nombre Del Validador" required>        
-        <div>
-        <button class="btn boton"type="submit">Mostrar</button>
-        <input class="boton left" type="reset" value="Limpiar">
+        <div class="btn-accion">
+        <button onclick="ocultarcopiado()" class="boton"type="submit">Mostrar</button>
+        <input onclick="ocultarcopiado()" class="boton" type="reset" value="Limpiar">
         <span class="invisible" hidden id="copia-p-super"></span>
         <span class="invisible" hidden id="copia-p-venta"></span>
         </div>
@@ -201,10 +201,31 @@
             <label class="layout noselect">Validador:</>
             <label class="layout marginleft " id="validador-lo"></>
         </div>
+        <div class="btn-copia">
+        <input id="copy-super" onclick="mostrar1()" type="button" class="boton copia" value="📨 Copia Supervisor">
+        <input id="copy-sale" onclick="mostrar2()" type="button" class="boton copia" value="📨 Copia Venta">
+        <label class="copiado1 noselect arriba" id="copiado1">¡Copiado!</label>
+        <label class="copiado2 noselect" id="copiado2">¡Copiado!</label>
 
-        <input id="copy-super" type="button" class="boton copia" value="📨 Copia Supervisor">
-        <input id="copy-sale"type="button" class="boton copia left" value="📨 Copia Venta">
-        
+            <script>
+                function mostrar1(){
+                    document.getElementById('copiado1').style.color ="white";
+                    document.getElementById('copiado2').style.color ="transparent";
+                    
+                }
+
+                function mostrar2(){
+                   document.getElementById('copiado2').style.color ="white";
+                   document.getElementById('copiado1').style.color ="transparent";
+                }
+
+                function ocultarcopiado(){
+                    document.getElementById('copiado1').style.color ="transparent";
+                    document.getElementById('copiado2').style.color ="transparent";
+                }
+            </script>
+
+        </div>
     </section>
     </div>
     
