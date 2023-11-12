@@ -91,19 +91,19 @@ function validarFormulario(e) {
 
   const plan = document.querySelector("#plan").value;
   const planmin = capitalizartexto(plan);
-  planr.textContent = `${planmin}`;
+  planr.textContent = `${planmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   const dn = document.querySelector("#dn").value;
   const dnmin = capitalizartexto(dn);
-  dnr.textContent = `${dnmin}`;
+  dnr.textContent = `${dnmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   const dn4 = document.querySelector("#dn4").value;
   const dn4min = capitalizartexto(dn4);
-  dn4r.textContent = `${dn4min}`;
+  dn4r.textContent = `${dn4min}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   const grabacion = document.querySelector("#grabacion").value;
   const grabacionmin = capitalizartexto(grabacion);
-  grabacionr.textContent = `${grabacionmin}`;
+  grabacionr.textContent = `${grabacionmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const fvc = document.querySelector("#fvc").value;
@@ -113,7 +113,7 @@ function validarFormulario(e) {
   //Siguiente campo
   const nip = document.querySelector("#nip").value;
   const nipmin = capitalizartexto(nip);
-  nipr.textContent = `${nipmin}`;
+  nipr.textContent = `${nipmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
   //Siguiente campo
   const vigencia = document.querySelector("#vigencia").value;
   const vigenciamin = capitalizartexto(vigencia);
@@ -122,22 +122,22 @@ function validarFormulario(e) {
   //Siguiente campo
   const nombres = document.querySelector("#nombres").value;
   const nombresmin = capitalizartexto(nombres);
-  nombresr.textContent = `${nombresmin}`;
+  nombresr.textContent = `${nombresmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const apellidopat = document.querySelector("#apellido-pat").value;
   const apellidopatmin = capitalizartexto(apellidopat);
-  apellidopatr.textContent = `${apellidopatmin}`;
+  apellidopatr.textContent = `${apellidopatmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const apellidomat = document.querySelector("#apellido-mat").value;
   const apellidomatmin = capitalizartexto(apellidomat);
-  apellidomatr.textContent = `${apellidomatmin}`;
+  apellidomatr.textContent = `${apellidomatmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const curp = document.querySelector("#curp").value;
   const curpmin = mayus(curp);
-  curpr.textContent = `${curpmin}`;
+  curpr.textContent = `${curpmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const user = document.querySelector("#user").value;
@@ -152,67 +152,67 @@ function validarFormulario(e) {
   //Siguiente campo
   const lugarnac = document.querySelector("#lugarnac").value;
   const lugarnacmin = capitalizartexto(lugarnac);
-  lugarnacr.textContent = `${lugarnacmin}`;
+  lugarnacr.textContent = `${lugarnacmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const rfc = document.querySelector("#rfc").value;
   const rfcmin = mayus(rfc);
-  rfcr.textContent = `${rfcmin}`;
+  rfcr.textContent = `${rfcmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const calle = document.querySelector("#calle").value;
   const callemin = capitalizartexto(calle);
-  caller.textContent = `${callemin}`;
+  caller.textContent = `${callemin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const numext = document.querySelector("#numext").value;
   const numextmin = capitalizartexto(numext);
-  numextr.textContent = `${numextmin}`;
+  numextr.textContent = `${numextmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const numint = document.querySelector("#numint").value;
   const numintmin = capitalizartexto(numint);
-  numintr.textContent = `${numintmin}`;
+  numintr.textContent = `${numintmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const colfracc = document.querySelector("#colfracc").value;
   const colfraccmin = capitalizartexto(colfracc);
-  colfraccr.textContent = `${colfraccmin}`;
+  colfraccr.textContent = `${colfraccmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const cp = document.querySelector("#cp").value;
   const cpmin = capitalizartexto(cp);
-  cpr.textContent = `${cpmin}`;
+  cpr.textContent = `${cpmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const entrecalles = document.querySelector("#entrecalles").value;
   const entrecallesmin = capitalizartexto(entrecalles);
-  entrecallesr.textContent = `${entrecallesmin}`;
+  entrecallesr.textContent = `${entrecallesmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const referencias = document.querySelector("#referencias").value;
   const referenciasmin = capitalizartexto(referencias);
-  referenciasr.textContent = `${referenciasmin}`;
+  referenciasr.textContent = `${referenciasmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const del = document.querySelector("#del").value;
   const delmin = capitalizartexto(del);
-  delr.textContent = `${delmin}`;
+  delr.textContent = `${delmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const estado = document.querySelector("#estado").value;
   const estadomin = capitalizartexto(estado);
-  estador.textContent = `${estadomin}`;
+  estador.textContent = `${estadomin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const contactouno = document.querySelector("#contactouno").value;
   const contactounomin = capitalizartexto(contactouno);
-  contactounor.textContent = `${contactounomin}`;
+  contactounor.textContent = `${contactounomin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const contactodos = document.querySelector("#contactodos").value;
   const contactodosmin = capitalizartexto(contactodos);
-  contactodosr.textContent = `${contactodosmin}`;
+  contactodosr.textContent = `${contactodosmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const email = document.querySelector("#email").value;
@@ -222,22 +222,22 @@ function validarFormulario(e) {
   //Siguiente campo
   const idine = document.querySelector("#idine").value;
   const idinemin = capitalizartexto(idine);
-  idiner.textContent = `${idinemin}`;
+  idiner.textContent = `${idinemin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const cac = document.querySelector("#cac").value;
   const cacmin = capitalizartexto(cac);
-  cacr.textContent = `${cacmin}`;
+  cacr.textContent = `${cacmin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const ejecutivo = document.querySelector("#ejecutivo").value;
   const ejecutivomin = capitalizartexto(ejecutivo);
-  ejecutivor.textContent = `${ejecutivomin}`;
+  ejecutivor.textContent = `${ejecutivomin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   //Siguiente campo
   const validador = document.querySelector("#validador").value;
   const validadormin = capitalizartexto(validador);
-  validadorr.textContent = `${validadormin}`;
+  validadorr.textContent = `${validadormin}`.replace(/[^a-zA-Z0-9 ]/g, '');
 
   copiapsuper.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nGRABACIÖN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}`;
   copiapventa.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nDN (ÚLTIMOS 4 DIGITOS):\t${dn4min}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}\nFECHA DE NACIMIENTO:\t${fechanacmin}\nLUGAR DE NACIMIENTO:\t${lugarnacmin}\nRFC:\t${rfcmin}\nCALLE:\t${callemin}\nNÚMERO EXT:\t${numextmin}\nNÚMERO INT:\t${numintmin}\nCOLONIA O FRACC:\t${colfraccmin}\nCP:\t${cpmin}\nENTRE CALLES:\t${entrecallesmin}\nREFERENCIAS:\t${referenciasmin}\nDELEGACIÓN/MUNICIPIO:\t${delmin}\nESTADO:\t${estadomin}\nTEL CONTACTO 1:\t${contactounomin}\nTEL CONTACTO 2:\t${contactodosmin}\nEMAIL:\t${emailmin}\nID INE:\t${idinemin}\nCAC MOVISTAR:\t${cacmin}\nEJECUTIVO:\t${ejecutivomin}\nVALIDADOR:\t${validadormin}`;
