@@ -44,12 +44,14 @@
         <div>
         <button class="btn boton"type="submit">Mostrar</button>
         <input class="boton left" type="reset" value="Limpiar">
+        <span class="invisible" hidden id="copia-p-super"></span>
+        <span class="invisible" hidden id="copia-p-venta"></span>
         </div>
     </form>
-    <section class="titulos">
+    <section class="titulos" id="result">
         <div class="margen">
-            <label class="layout">Plan:</label>
-            <label class="layout marginleft capitl" id="plan-lo"></label>
+            <label class="layout" id="plann">Plan:</label>
+            <label class="layout marginleft" id="plan-lo"></label>
         </div>
         <div >
             <label class="layout">DN:</>
@@ -57,149 +59,152 @@
         </div>
         <div >
             <label class="layout">DN (Últimos 4 Dígitos):</>
-            <label class="layout marginleft capitl" id="dn4-lo"></>
+            <label class="layout marginleft " id="dn4-lo"></>
         </div>
         
         <div >
             <label class="layout">Grabación DN:</>
-            <label class="layout marginleft capitl" id="grabacion-lo"></>
+            <label class="layout marginleft " id="grabacion-lo"></>
         </div>
 
         <div >
             <label class="layout">FVC:</>
-            <label class="layout marginleft capitl" id="fvc-lo"></>
+            <label class="layout marginleft " id="fvc-lo"></>
         </div>
 
         <div >
             <label class="layout">NIP:</>
-            <label class="layout marginleft capitl" id="nip-lo"></>
+            <label class="layout marginleft " id="nip-lo"></>
         </div>
 
         <div >
             <label class="layout">Vigencia NIP:</>
-            <label class="layout marginleft capitl" id="vigencia-lo"></>
+            <label class="layout marginleft " id="vigencia-lo"></>
         </div>
 
         <div >
             <label class="layout">Nombre(s):</>
-            <label class="layout marginleft capitl" id="nombres-lo"></>
+            <label class="layout marginleft " id="nombres-lo"></>
         </div>
 
         <div >
             <label class="layout">Apellido Paterno:</>
-            <label class="layout marginleft capitl" id="apellido-pat-lo"></>
+            <label class="layout marginleft " id="apellido-pat-lo"></>
         </div>
 
         <div >
             <label class="layout">Apellido Materno:</>
-            <label class="layout marginleft capitl" id="apellido-mat-lo"></>
+            <label class="layout marginleft " id="apellido-mat-lo"></>
         </div>
 
         <div >
             <label class="layout">CURP:</>
-            <label class="layout marginleft mayus" id="curp-lo"></>
+            <label class="layout marginleft " id="curp-lo"></>
         </div>
 
         <div >
             <label class="layout">User Login:</>
-            <label class="layout marginleft mayus" id="user-lo"></>
+            <label class="layout marginleft " id="user-lo"></>
         </div>
 
         <div >
             <label class="layout">Fecha de Nacimiento:</>
-            <label class="layout marginleft mayus" id="fechanac-lo"></>
+            <label class="layout marginleft" id="fechanac-lo"></>
         </div>
 
         <div >
             <label class="layout">Lugar de Nacimiento:</>
-            <label class="layout marginleft capitl" id="lugarnac-lo"></>
+            <label class="layout marginleft" id="lugarnac-lo"></>
         </div>
 
         <div >
             <label class="layout">RFC:</>
-            <label class="layout marginleft mayus" id="rfc-lo"></>
+            <label class="layout marginleft " id="rfc-lo"></>
         </div>
 
         <div >
             <label class="layout">Calle:</>
-            <label class="layout marginleft capitl" id="calle-lo"></>
+            <label class="layout marginleft " id="calle-lo"></>
         </div>
 
         <div >
             <label class="layout">Número Exterior:</>
-            <label class="layout marginleft capitl" id="numext-lo"></>
+            <label class="layout marginleft " id="numext-lo"></>
         </div>
 
         <div >
             <label class="layout">Número Interior:</>
-            <label class="layout marginleft capitl" id="numint-lo"></>
+            <label class="layout marginleft " id="numint-lo"></>
         </div>
 
         <div >
             <label class="layout">Colonia o Fraccionamiento:</>
-            <label class="layout marginleft capitl" id="colfracc-lo"></>
+            <label class="layout marginleft " id="colfracc-lo"></>
         </div>
 
         <div >
             <label class="layout">CP:</>
-            <label class="layout marginleft capitl" id="cp-lo"></>
+            <label class="layout marginleft " id="cp-lo"></>
         </div>
 
         <div >
             <label class="layout">Entrecalles:</>
-            <label class="layout marginleft capitl" id="entrecalles-lo"></>
+            <label class="layout marginleft " id="entrecalles-lo"></>
         </div>
 
         <div >
             <label class="layout">Referencias:</>
-            <label class="layout marginleft capitl" id="referencias-lo"></>
+            <label class="layout marginleft " id="referencias-lo"></>
         </div>
 
         <div >
             <label class="layout">Delegación o Municipio:</>
-            <label class="layout marginleft capitl" id="del-lo"></>
+            <label class="layout marginleft " id="del-lo"></>
         </div>
 
         <div >
             <label class="layout">Estado:</>
-            <label class="layout marginleft capitl" id="estado-lo"></>
+            <label class="layout marginleft " id="estado-lo"></>
         </div>
 
         <div >
             <label class="layout">Tel Contacto 1:</>
-            <label class="layout marginleft capitl" id="contactouno-lo"></>
+            <label class="layout marginleft " id="contactouno-lo"></>
         </div>
 
         <div >
             <label class="layout">Tel Contacto 2:</>
-            <label class="layout marginleft capitl" id="contactodos-lo"></>
+            <label class="layout marginleft " id="contactodos-lo"></>
         </div>
 
         <div >
             <label class="layout">Correo Electrónico:</>
-            <label class="layout marginleft minus" id="email-lo"></>
+            <label class="layout marginleft " id="email-lo"></>
         </div>
 
         <div >
             <label class="layout">ID INE:</>
-            <label class="layout marginleft capitl" id="idine-lo"></>
+            <label class="layout marginleft " id="idine-lo"></>
         </div>
 
         <div >
             <label class="layout">CAC Movistar:</>
-            <label class="layout marginleft capitl" id="cac-lo"></>
+            <label class="layout marginleft " id="cac-lo"></>
         </div>
 
         <div >
             <label class="layout">Ejecutivo:</>
-            <label class="layout marginleft capitl" id="ejecutivo-lo"></>
+            <label class="layout marginleft " id="ejecutivo-lo"></>
         </div>
 
         <div >
             <label class="layout">Validador:</>
-            <label class="layout marginleft capitl" id="validador-lo"></>
+            <label class="layout marginleft " id="validador-lo"></>
         </div>
 
+        <input id="copy-super" type="button" class="boton copia" value="📨 Copia Supervisor">
+        <input id="copy-sale"type="button" class="boton copia left" value="📨 Copia Venta">
+        
     </section>
     </div>
     
