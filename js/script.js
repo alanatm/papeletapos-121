@@ -135,24 +135,38 @@ function validarFormulario(e) {
 
   //Siguiente campo
   const fvc = document.querySelector("#fvc").value;
-  const fvcmin = new Date(fvc);
-  var diafvc = fvcmin.getDate()+1;
+  const fvcmin = capitalizartexto(fvc);
+  fvcr.textContent = `${fvcmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+
+
+  /*const fvcmin = new Date(fvc);
+  var diafvc = fvcmin.getDate() + 1;
   var mesfvc = fvcmin.getMonth() + 1;
   const angiofvc = fvcmin.getFullYear();
 
-  
-  if (diafvc < 10 && mesfvc < 10) {
+  if (diafvc >= 29 && mesfvc == 2) {
+    diafvc = "01";
+    mesfvc = mesfvc + 1;
+    fvcr.textContent = `${diafvc}/${mesfvc}/${angiofvc}`;
+  } else if (diafvc < 10 && mesfvc < 10) {
     fvcr.textContent = `0${diafvc}/0${mesfvc}/${angiofvc}`;
-  } else if (diafvc > 9 && mesfvc < 10) {
+  } else if (diafvc > 9 && diafvc < 31 && mesfvc < 10) {
     fvcr.textContent = `${diafvc}/0${mesfvc}/${angiofvc}`;
-  } else if (diafvc < 10 && mesfvc>9) {
+  } else if (diafvc < 10 && mesfvc > 9) {
     fvcr.textContent = `0${diafvc}/${mesfvc}/${angiofvc}`;
-  } else if (diafvc > 9 && mesfvc > 9) {
+  } else if (diafvc > 9 && diafvc < 31 && mesfvc > 9) {
+    fvcr.textContent = `${diafvc}/${mesfvc}/${angiofvc}`;
+  } else if (diafvc >= 31 && mesfvc < 10) {
+    diafvc = "01";
+    mesfvc = mesfvc + 1;
+    fvcr.textContent = `${diafvc}/0${mesfvc}/${angiofvc}`;
+  } else if (diafvc >= 31 && mesfvc > 9) {
+    diafvc = "01";
+    mesfvc = mesfvc + 1;
     fvcr.textContent = `${diafvc}/${mesfvc}/${angiofvc}`;
   } else {
     fvcr.textContent = `error`;
-  }
-
+  }*/
 
   //Siguiente campo
   const nip = document.querySelector("#nip").value;
