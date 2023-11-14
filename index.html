@@ -10,37 +10,45 @@
     <div class="content">
     <form class="principal-form" id="formulario">
         <h2>Papeleta Pospago</h2>
-        <input type="text" class="input-datos"name="plan" id="plan" placeholder="Ingrese Plan" required>
-        <input type="tel" maxlength="10" class="input-datos"name="dn" id="dn" placeholder="Ingrese DN" required>
-        <input type="tel" maxlength="4" class="input-datos"name="dn4" id="dn4" placeholder="Ingrese Ultimos 4 Dígitos DN" required>
-        <input type="tel" maxlength="10" class="input-datos"name="grabacion" id="grabacion" placeholder="Ingrese Número De Grabación" required>
-        <input type="text" maxlength="10" class="input-datos"name="fvc" id="fvc" placeholder="Ingrese FVC" required>
-        <input type="tel" maxlength="4" class="input-datos"name="nip" id="nip" placeholder="Ingrese NIP" required>
-        <input type="text" maxlength="10" class="input-datos"name="vigencia" id="vigencia" placeholder="Ingrese Vigencia Del NIP" required>
-        <input type="text" class="input-datos"name="nombres" id="nombres" placeholder="Ingrese Nombre(s)" required>
-        <input type="text" class="input-datos"name="apellido-pat" id="apellido-pat" placeholder="Ingrese Apellido Paterno" required>
-        <input type="text" class="input-datos"name="apellido-mat" id="apellido-mat" placeholder="Ingrese Apellido Materno" required>
-        <input type="text" maxlength="18" class="input-datos"name="curp" id="curp" placeholder="Ingrese CURP" required>
-        <input type="text" class="input-datos"name="user" id="user" placeholder="Ingrese User Login" required>
-        <input type="text" maxlength="10" class="input-datos"name="fechanac" id="fechanac" placeholder="Ingrese Fecha De Nacimiento" required>
-        <input type="text" class="input-datos"name="lugarnac" id="lugarnac" placeholder="Ingrese Lugar De Nacimiento" required>
-        <input type="text" maxlength="13" class="input-datos"name="rfc" id="rfc" placeholder="Ingrese RFC" required>
-        <input type="text" class="input-datos"name="calle" id="calle" placeholder="Ingrese Calle" required>
-        <input type="text" class="input-datos"name="numext" id="numext" placeholder="Ingrese Número Exterior" required>
-        <input type="text" class="input-datos"name="numint" id="numint" placeholder="Ingrese Número Interior" required>
-        <input type="text" class="input-datos"name="colfracc" id="colfracc" placeholder="Ingrese Colonia O Fraccionamiento" required>
-        <input type="tel" maxlength="5" class="input-datos"name="cp" id="cp" placeholder="Ingrese Código Postal" required>
-        <input type="text" class="input-datos"name="entrecalles" id="entrecalles" placeholder="Ingrese Entrecalles" required>
-        <input type="text" class="input-datos"name="referencias" id="referencias" placeholder="Ingrese Referencias Del Domicilio" required>
-        <input type="text" class="input-datos"name="del" id="del" placeholder="Ingrese Delegación O Municipio" required>
-        <input type="text" class="input-datos"name="estado" id="estado" placeholder="Ingrese Estado" required>
-        <input type="tel" maxlength="10" class="input-datos"name="contactouno" id="contactouno" placeholder="Ingrese Primer Teléfono De Contacto" required>
-        <input type="tel" maxlength="10" class="input-datos"name="contactodos" id="contactodos" placeholder="Ingrese Segundo Teléfono De Contacto" required>
-        <input type="email" class="input-datos"name="email" id="email" placeholder="Ingrese Correo Electrónico" required>
-        <input type="tel"  class="input-datos"name="idine" id="idine" placeholder="Ingrese ID MX" required>
-        <input type="text" class="input-datos"name="cac" id="cac" placeholder="Ingrese Centro De Atención A Clientes" required>
-        <input type="text" class="input-datos"name="ejecutivo" id="ejecutivo" placeholder="Ingrese Nombre Del Ejecutivo" required>
-        <input type="text" class="input-datos"name="validador" id="validador" placeholder="Ingrese Nombre Del Validador" required>        
+        <select type="text" class="input-datos"name="plan" id="plan" placeholder="Ingrese Plan" required>
+            <option value="Giga Move 4" >Giga Move 4</option>
+            <option value="Giga Move 5" >Giga Move 5</option>
+            <option value="Giga Move 6" >Giga Move 6</option>
+            <option value="Giga Move 10" >Giga Move 10</option>
+            <option value="Giga Move 14" >Giga Move 14</option>
+            <option value="Giga Move 17" >Giga Move 17</option>
+            <option value="Giga Move 20" >Giga Move 20</option>
+            <option value="Giga Move Ilimitado" >Giga Move Ilimitado</option>
+        <input type="tel" maxlength="10" class="input-datos"name="dn" id="dn" placeholder="Ingrese DN" required onkeyup="obtenerdigitos()" autocomplete="off">
+        <input type="tel" maxlength="4" class="input-datos"name="dn4" id="dn4" placeholder="Ingrese Ultimos 4 Dígitos DN" required disabled autocomplete="off">
+        <input type="tel" maxlength="10" class="input-datos"name="grabacion" id="grabacion" placeholder="Ingrese Número De Grabación" required autocomplete="off">
+        <input type="date" max="2100-12-30" maxlength="10" class="input-datos"name="fvc" id="fvc" placeholder="Ingrese FVC" required autocomplete="off">
+        <input type="tel" maxlength="4" class="input-datos"name="nip" id="nip" placeholder="Ingrese NIP" required autocomplete="off">
+        <input type="text" disabled="disabled" maxlength="10" class="input-datos"name="vigencia" id="vigencia" placeholder="Ingrese Vigencia Del NIP" required autocomplete="off">
+        <input type="text" class="input-datos"name="nombres" id="nombres" placeholder="Ingrese Nombre(s)" required autocomplete="off">
+        <input type="text" class="input-datos"name="apellido-pat" id="apellido-pat" placeholder="Ingrese Apellido Paterno" required autocomplete="off">
+        <input type="text" class="input-datos"name="apellido-mat" id="apellido-mat" placeholder="Ingrese Apellido Materno" required autocomplete="off">
+        <input type="text" maxlength="18" class="input-datos"name="curp" id="curp" placeholder="Ingrese CURP" required autocomplete="off">
+        <input type="text" class="input-datos"name="user" id="user" placeholder="Ingrese User Login" required autocomplete="off">
+        <input type="text"  max="2100-12-30" maxlength="10" class="input-datos"name="fechanac" id="fechanac" placeholder="Ingrese Fecha De Nacimiento" required autocomplete="off">
+        <input type="text" class="input-datos"name="lugarnac" id="lugarnac" placeholder="Ingrese Lugar De Nacimiento" required autocomplete="off">
+        <input type="text" maxlength="13" class="input-datos"name="rfc" id="rfc" placeholder="Ingrese RFC" required autocomplete="off">
+        <input type="text" class="input-datos"name="calle" id="calle" placeholder="Ingrese Calle" required autocomplete="off">
+        <input type="text" class="input-datos"name="numext" id="numext" placeholder="Ingrese Número Exterior" required autocomplete="off">
+        <input type="text" class="input-datos"name="numint" id="numint" placeholder="Ingrese Número Interior" autocomplete="off">
+        <input type="text" class="input-datos"name="colfracc" id="colfracc" placeholder="Ingrese Colonia O Fraccionamiento" required autocomplete="off">
+        <input type="tel" maxlength="5" class="input-datos"name="cp" id="cp" placeholder="Ingrese Código Postal" required autocomplete="off">
+        <input type="text" class="input-datos"name="entrecalles" id="entrecalles" placeholder="Ingrese Entrecalles" required autocomplete="off">
+        <input type="text" class="input-datos"name="referencias" id="referencias" placeholder="Ingrese Referencias Del Domicilio" required autocomplete="off">
+        <input type="text" class="input-datos"name="del" id="del" placeholder="Ingrese Delegación O Municipio" required autocomplete="off">
+        <input type="text" class="input-datos"name="estado" id="estado" placeholder="Ingrese Estado" required autocomplete="off">
+        <input type="tel" maxlength="10" class="input-datos"name="contactouno" id="contactouno" placeholder="Ingrese Primer Teléfono De Contacto" required autocomplete="off">
+        <input type="tel" maxlength="10" class="input-datos"name="contactodos" id="contactodos" placeholder="Ingrese Segundo Teléfono De Contacto" required autocomplete="off">
+        <input type="email" class="input-datos"name="email" id="email" placeholder="Ingrese Correo Electrónico" required autocomplete="off">
+        <input type="tel"  class="input-datos"name="idine" id="idine" placeholder="Ingrese ID MX" required autocomplete="off">
+        <input type="text" class="input-datos"name="cac" id="cac" placeholder="Ingrese Centro De Atención A Clientes" required autocomplete="off">
+        <input type="text" class="input-datos"name="ejecutivo" id="ejecutivo" placeholder="Ingrese Nombre Del Ejecutivo" required autocomplete="off">
+        <input type="text" class="input-datos"name="validador" id="validador" placeholder="Ingrese Nombre Del Validador" required autocomplete="off">        
         <div class="btn-accion">
         <button onclick="ocultarcopiado()" class="boton"type="submit">Mostrar</button>
         <input onclick="ocultarcopiado()" class="boton" type="reset" value="Limpiar">
