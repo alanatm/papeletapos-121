@@ -136,7 +136,7 @@ function validarFormulario(e) {
   //Siguiente campo
   const fvc = document.querySelector("#fvc").value;
   const fvcmin = capitalizartexto(fvc);
-  fvcr.textContent = `${fvcmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  fvcr.textContent = `${fvcmin}`;
 
 
   /*const fvcmin = new Date(fvc);
