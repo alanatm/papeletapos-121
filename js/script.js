@@ -138,7 +138,6 @@ function validarFormulario(e) {
   const fvcmin = capitalizartexto(fvc);
   fvcr.textContent = `${fvcmin}`;
 
-
   /*const fvcmin = new Date(fvc);
   var diafvc = fvcmin.getDate() + 1;
   var mesfvc = fvcmin.getMonth() + 1;
@@ -336,6 +335,6 @@ function validarFormulario(e) {
   ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Info para botón copiar
-  copiapsuper.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}\nEJECUTIVO:\t${ejecutivomin}`;
-  copiapventa.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nDN (ÚLTIMOS 4 DIGITOS):\t${dn4min}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}\nFECHA DE NACIMIENTO:\t${fechanacmin}\nLUGAR DE NACIMIENTO:\t${lugarnacmin}\nRFC:\t${rfcmin}\nCALLE:\t${callemin}\nNÚMERO EXT:\t${numextmin}\nNÚMERO INT:\t${numintmin}\nCOLONIA O FRACC:\t${colfraccmin}\nCP:\t${cpmin}\nENTRE CALLES:\t${entrecallesmin}\nREFERENCIAS:\t${referenciasmin}\nDELEGACIÓN/MUNICIPIO:\t${delmin}\nESTADO:\t${estadomin}\nTEL CONTACTO 1:\t${contactounomin}\nTEL CONTACTO 2:\t${contactodosmin}\nEMAIL:\t${emailmin}\nID INE:\t${idinemin}\nCAC MOVISTAR:\t${cacmin}\nEJECUTIVO:\t${ejecutivomin}\nVALIDADOR:\t${validadormin}`;
+  copiapsuper.textContent = `PLAN:\t ${planr}\nDN:\t${dnr}\nGRABACIÓN DN:\t${grabacionr}\nFVC:\t${fvcr}\nNIP:\t${nipr}\nVIGENCIA:\t${vigenciar}\nNOMBRES:\t${nombresr}\nAPELLIDO PATERNO:\t${apellidopatr}\nAPELLIDO MATERNO:\t${apellidomatr}\nCURP:\t${curpr}\nUSER LOGIN:\t${userr}\nEJECUTIVO:\t${ejecutivor}`;
+  copiapventa.textContent = `PLAN:\t ${planr}\nDN:\t${dnr}\nDN (ÚLTIMOS 4 DIGITOS):\t${dn4r}\nGRABACIÓN DN:\t${grabacionr}\nFVC:\t${fvcr}\nNIP:\t${nipr}\nVIGENCIA:\t${vigenciar}\nNOMBRES:\t${nombresr}\nAPELLIDO PATERNO:\t${apellidopatr}\nAPELLIDO MATERNO:\t${apellidomatr}\nCURP:\t${curpr}\nUSER LOGIN:\t${userr}\nFECHA DE NACIMIENTO:\t${fechanacr}\nLUGAR DE NACIMIENTO:\t${lugarnacr}\nRFC:\t${rfcr}\nCALLE:\t${caller}\nNÚMERO EXT:\t${numextr}\nNÚMERO INT:\t${numintr}\nCOLONIA O FRACC:\t${colfraccr}\nCP:\t${cpr}\nENTRE CALLES:\t${entrecallesr}\nREFERENCIAS:\t${referenciasr}\nDELEGACIÓN/MUNICIPIO:\t${delr}\nESTADO:\t${estador}\nTEL CONTACTO 1:\t${contactounor}\nTEL CONTACTO 2:\t${contactodosr}\nEMAIL:\t${emailr}\nID INE:\t${idiner}\nCAC MOVISTAR:\t${cacr}\nEJECUTIVO:\t${ejecutivor}\nVALIDADOR:\t${validadorr}`;
 }
