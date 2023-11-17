@@ -115,23 +115,23 @@ function validarFormulario(e) {
   e.preventDefault();
 
   const plan = document.querySelector("#plan").value;
-  const planmin = capitalizartexto(plan);
-  planr.textContent = `${planmin}`.replace(
+  const planmin = capitalizartexto(plan).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  planr.textContent = `${planmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   const dn = document.querySelector("#dn").value;
-  const dnmin = capitalizartexto(dn);
-  dnr.textContent = `${dnmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const dnmin = capitalizartexto(dn).replace(/[^a-zA-Z0-9 ]/g, "");
+  dnr.textContent = `${dnmin}`;
 
   const dn4 = document.querySelector("#dn4").value;
-  const dn4min = capitalizartexto(dn4);
-  dn4r.textContent = `${dn4min}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const dn4min = capitalizartexto(dn4).replace(/[^a-zA-Z0-9 ]/g, "");
+  dn4r.textContent = `${dn4min}`;
 
   const grabacion = document.querySelector("#grabacion").value;
-  const grabacionmin = capitalizartexto(grabacion);
-  grabacionr.textContent = `${grabacionmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const grabacionmin = capitalizartexto(grabacion).replace(/[^a-zA-Z0-9 ]/g, "");
+  grabacionr.textContent = `${grabacionmin}`;
 
   //Siguiente campo
   const fvc = document.querySelector("#fvc").value;
@@ -169,8 +169,8 @@ function validarFormulario(e) {
 
   //Siguiente campo
   const nip = document.querySelector("#nip").value;
-  const nipmin = capitalizartexto(nip);
-  nipr.textContent = `${nipmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const nipmin = capitalizartexto(nip).replace(/[^a-zA-Z0-9 ]/g, "");
+  nipr.textContent = `${nipmin}`;
   //Siguiente campo
   const vigencia = document.querySelector("#vigencia").value;
   const vigenciamin = capitalizartexto(vigencia);
@@ -178,32 +178,32 @@ function validarFormulario(e) {
 
   //Siguiente campo
   const nombres = document.querySelector("#nombres").value;
-  const nombresmin = capitalizartexto(nombres);
-  nombresr.textContent = `${nombresmin}`.replace(
+  const nombresmin = capitalizartexto(nombres).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  nombresr.textContent = `${nombresmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const apellidopat = document.querySelector("#apellido-pat").value;
-  const apellidopatmin = capitalizartexto(apellidopat);
-  apellidopatr.textContent = `${apellidopatmin}`.replace(
+  const apellidopatmin = capitalizartexto(apellidopat).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  apellidopatr.textContent = `${apellidopatmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const apellidomat = document.querySelector("#apellido-mat").value;
-  const apellidomatmin = capitalizartexto(apellidomat);
-  apellidomatr.textContent = `${apellidomatmin}`.replace(
+  const apellidomatmin = capitalizartexto(apellidomat).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  apellidomatr.textContent = `${apellidomatmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const curp = document.querySelector("#curp").value;
-  const curpmin = mayus(curp);
-  curpr.textContent = `${curpmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const curpmin = mayus(curp).replace(/[^a-zA-Z0-9 ]/g, "");
+  curpr.textContent = `${curpmin}`;
 
   //Siguiente campo
   const user = document.querySelector("#user").value;
@@ -217,88 +217,88 @@ function validarFormulario(e) {
 
   //Siguiente campo
   const lugarnac = document.querySelector("#lugarnac").value;
-  const lugarnacmin = capitalizartexto(lugarnac);
-  lugarnacr.textContent = `${lugarnacmin}`.replace(
+  const lugarnacmin = capitalizartexto(lugarnac).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  lugarnacr.textContent = `${lugarnacmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
   //Siguiente campo
   const rfc = document.querySelector("#rfc").value;
-  const rfcmin = mayus(rfc);
-  rfcr.textContent = `${rfcmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const rfcmin = mayus(rfc).replace(/[^a-zA-Z0-9 ]/g, "");;
+  rfcr.textContent = `${rfcmin}`
 
   //Siguiente campo
   const calle = document.querySelector("#calle").value;
-  const callemin = capitalizartexto(calle);
-  caller.textContent = `${callemin}`.replace(
+  const callemin = capitalizartexto(calle).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  caller.textContent = `${callemin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const numext = document.querySelector("#numext").value;
-  const numextmin = capitalizartexto(numext);
-  numextr.textContent = `${numextmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const numextmin = capitalizartexto(numext).replace(/[^a-zA-Z0-9 ]/g, "");
+  numextr.textContent = `${numextmin}`;
 
   //Siguiente campo
   const numint = document.querySelector("#numint").value;
-  const numintmin = capitalizartexto(numint);
-  numintr.textContent = `${numintmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const numintmin = capitalizartexto(numint).replace(/[^a-zA-Z0-9 ]/g, "");
+  numintr.textContent = `${numintmin}`;
 
   //Siguiente campo
   const colfracc = document.querySelector("#colfracc").value;
-  const colfraccmin = capitalizartexto(colfracc);
-  colfraccr.textContent = `${colfraccmin}`.replace(
+  const colfraccmin = capitalizartexto(colfracc).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  colfraccr.textContent = `${colfraccmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const cp = document.querySelector("#cp").value;
-  const cpmin = capitalizartexto(cp);
-  cpr.textContent = `${cpmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const cpmin = capitalizartexto(cp).replace(/[^a-zA-Z0-9 ]/g, "");
+  cpr.textContent = `${cpmin}`;
 
   //Siguiente campo
   const entrecalles = document.querySelector("#entrecalles").value;
-  const entrecallesmin = capitalizartexto(entrecalles);
-  entrecallesr.textContent = `${entrecallesmin}`.replace(
+  const entrecallesmin = capitalizartexto(entrecalles).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  entrecallesr.textContent = `${entrecallesmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const referencias = document.querySelector("#referencias").value;
-  const referenciasmin = capitalizartexto(referencias);
-  referenciasr.textContent = `${referenciasmin}`.replace(
+  const referenciasmin = capitalizartexto(referencias).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  referenciasr.textContent = `${referenciasmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const del = document.querySelector("#del").value;
-  const delmin = capitalizartexto(del);
-  delr.textContent = `${delmin}`.replace(
+  const delmin = capitalizartexto(del).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  delr.textContent = `${delmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const estado = document.querySelector("#estado").value;
-  const estadomin = capitalizartexto(estado);
-  estador.textContent = `${estadomin}`.replace(
+  const estadomin = capitalizartexto(estado).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  estador.textContent = `${estadomin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const contactouno = document.querySelector("#contactouno").value;
-  const contactounomin = capitalizartexto(contactouno);
-  contactounor.textContent = `${contactounomin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const contactounomin = capitalizartexto(contactouno).replace(/[^a-zA-Z0-9 ]/g, "");
+  contactounor.textContent = `${contactounomin}`;
 
   //Siguiente campo
   const contactodos = document.querySelector("#contactodos").value;
-  const contactodosmin = capitalizartexto(contactodos);
-  contactodosr.textContent = `${contactodosmin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const contactodosmin = capitalizartexto(contactodos).replace(/[^a-zA-Z0-9 ]/g, "");
+  contactodosr.textContent = `${contactodosmin}`;
 
   //Siguiente campo
   const email = document.querySelector("#email").value;
@@ -307,34 +307,34 @@ function validarFormulario(e) {
 
   //Siguiente campo
   const idine = document.querySelector("#idine").value;
-  const idinemin = capitalizartexto(idine);
-  idiner.textContent = `${idinemin}`.replace(/[^a-zA-Z0-9 ]/g, "");
+  const idinemin = capitalizartexto(idine).replace(/[^a-zA-Z0-9 ]/g, "");
+  idiner.textContent = `${idinemin}`;
 
   //Siguiente campo
   const cac = document.querySelector("#cac").value;
-  const cacmin = capitalizartexto(cac);
-  cacr.textContent = `${cacmin}`.replace(
+  const cacmin = capitalizartexto(cac).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  cacr.textContent = `${cacmin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const ejecutivo = document.querySelector("#ejecutivo").value;
-  const ejecutivomin = capitalizartexto(ejecutivo);
-  ejecutivor.textContent = `${ejecutivomin}`.replace(
+  const ejecutivomin = capitalizartexto(ejecutivo).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  ejecutivor.textContent = `${ejecutivomin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Siguiente campo
   const validador = document.querySelector("#validador").value;
-  const validadormin = capitalizartexto(validador);
-  validadorr.textContent = `${validadormin}`.replace(
+  const validadormin = capitalizartexto(validador).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
     ""
-  ); //elimina caracteres especiales exceptuando alfanuméricos como la ñ
+  );
+  validadorr.textContent = `${validadormin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Info para botón copiar
-  copiapsuper.textContent = `PLAN:\t ${planr}\nDN:\t${dnr}\nGRABACIÓN DN:\t${grabacionr}\nFVC:\t${fvcr}\nNIP:\t${nipr}\nVIGENCIA:\t${vigenciar}\nNOMBRES:\t${nombresr}\nAPELLIDO PATERNO:\t${apellidopatr}\nAPELLIDO MATERNO:\t${apellidomatr}\nCURP:\t${curpr}\nUSER LOGIN:\t${userr}\nEJECUTIVO:\t${ejecutivor}`;
-  copiapventa.textContent = `PLAN:\t ${planr}\nDN:\t${dnr}\nDN (ÚLTIMOS 4 DIGITOS):\t${dn4r}\nGRABACIÓN DN:\t${grabacionr}\nFVC:\t${fvcr}\nNIP:\t${nipr}\nVIGENCIA:\t${vigenciar}\nNOMBRES:\t${nombresr}\nAPELLIDO PATERNO:\t${apellidopatr}\nAPELLIDO MATERNO:\t${apellidomatr}\nCURP:\t${curpr}\nUSER LOGIN:\t${userr}\nFECHA DE NACIMIENTO:\t${fechanacr}\nLUGAR DE NACIMIENTO:\t${lugarnacr}\nRFC:\t${rfcr}\nCALLE:\t${caller}\nNÚMERO EXT:\t${numextr}\nNÚMERO INT:\t${numintr}\nCOLONIA O FRACC:\t${colfraccr}\nCP:\t${cpr}\nENTRE CALLES:\t${entrecallesr}\nREFERENCIAS:\t${referenciasr}\nDELEGACIÓN/MUNICIPIO:\t${delr}\nESTADO:\t${estador}\nTEL CONTACTO 1:\t${contactounor}\nTEL CONTACTO 2:\t${contactodosr}\nEMAIL:\t${emailr}\nID INE:\t${idiner}\nCAC MOVISTAR:\t${cacr}\nEJECUTIVO:\t${ejecutivor}\nVALIDADOR:\t${validadorr}`;
+  copiapsuper.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}\nEJECUTIVO:\t${ejecutivomin}`;
+  copiapventa.textContent = `PLAN:\t ${planmin}\nDN:\t${dnmin}\nDN (ÚLTIMOS 4 DIGITOS):\t${dn4min}\nGRABACIÓN DN:\t${grabacionmin}\nFVC:\t${fvcmin}\nNIP:\t${nipmin}\nVIGENCIA:\t${vigenciamin}\nNOMBRES:\t${nombresmin}\nAPELLIDO PATERNO:\t${apellidopatmin}\nAPELLIDO MATERNO:\t${apellidomatmin}\nCURP:\t${curpmin}\nUSER LOGIN:\t${usermin}\nFECHA DE NACIMIENTO:\t${fechanacmin}\nLUGAR DE NACIMIENTO:\t${lugarnacmin}\nRFC:\t${rfcmin}\nCALLE:\t${callemin}\nNÚMERO EXT:\t${numextmin}\nNÚMERO INT:\t${numintmin}\nCOLONIA O FRACC:\t${colfraccmin}\nCP:\t${cpmin}\nENTRE CALLES:\t${entrecallesmin}\nREFERENCIAS:\t${referenciasmin}\nDELEGACIÓN/MUNICIPIO:\t${delmin}\nESTADO:\t${estadomin}\nTEL CONTACTO 1:\t${contactounomin}\nTEL CONTACTO 2:\t${contactodosmin}\nEMAIL:\t${emailmin}\nID INE:\t${idinemin}\nCAC MOVISTAR:\t${cacmin}\nEJECUTIVO:\t${ejecutivomin}\nVALIDADOR:\t${validadormin}`;
 }
