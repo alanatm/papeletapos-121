@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-principal{
+    background-color: rgb(238, 138, 6);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center
+}
+
+.opcion-input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.opcion-seccion{
+    height: 4rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 138, 6);
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.opcion-seccion:hover{
+    transform: scale(1.02) ;
+}
+.opcion-seccion:active{
+        transform: scale(0.98);
+        /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        /* Lowering the shadow */
+    
+}
+
+.titulo{ 
+    margin-left: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;   
+}
+.link-titulo{
+    color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    color: rgb(143, 80, 57);
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.division{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.division-content{
+    height: 1rem;
+    width: 85%;
+    color: transparent;
+    box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 8%);
+}
+.segundo-h2{
+    margin-top: 2rem
+}
