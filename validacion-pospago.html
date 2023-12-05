@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Validación</title>
+</head>
+<body>
+    <header class="header-principal">
+        
+        <p class="titulo"><a class="link-titulo" href="Index.html">121 Contact Center</a></p>
+    </header>
+    <div class="content">
+    <form class="principal-form" id="formulario">
+        <h2>Papeleta Pospago</h2>
+        <select type="text" class="input-datos"name="plan" id="plan" placeholder="Ingrese Plan" required>
+            <option value="Giga Move 4" >Giga Move 4</option>
+            <option value="Giga Move 5" >Giga Move 5</option>
+            <option value="Giga Move 6" >Giga Move 6</option>
+            <option value="Giga Move 10" >Giga Move 10</option>
+            <option value="Giga Move 14" >Giga Move 14</option>
+            <option value="Giga Move 17" >Giga Move 17</option>
+            <option value="Giga Move 20" >Giga Move 20</option>
+            <option value="Giga Move Ilimitado" >Giga Move Ilimitado</option>
+        <input type="tel" maxlength="10" class="input-datos"name="dn" id="dn" placeholder="Ingrese DN" required onkeyup="obtenerdigitos()" autocomplete="off">
+        <input type="tel" maxlength="4" class="input-datos"name="dn4" id="dn4" placeholder="Ingrese Ultimos 4 Dígitos DN" required disabled autocomplete="off">
+        <input type="tel" maxlength="10" class="input-datos"name="grabacion" id="grabacion" placeholder="Ingrese Número De Grabación" required autocomplete="off">
+        <input type="text" maxlength="10" class="input-datos"name="fvc" id="fvc" placeholder="Ingrese FVC" required autocomplete="off">
+        <input type="tel" maxlength="4" class="input-datos"name="nip" id="nip" placeholder="Ingrese NIP" required autocomplete="off">
+        <input type="text"  maxlength="10" class="input-datos"name="vigencia" id="vigencia" placeholder="Ingrese Vigencia Del NIP" required autocomplete="off">
+        <input type="text" class="input-datos"name="nombres" id="nombres" placeholder="Ingrese Nombre(s)" required autocomplete="off">
+        <input type="text" class="input-datos"name="apellido-pat" id="apellido-pat" placeholder="Ingrese Apellido Paterno" required autocomplete="off">
+        <input type="text" class="input-datos"name="apellido-mat" id="apellido-mat" placeholder="Ingrese Apellido Materno" required autocomplete="off">
+        <input type="text" maxlength="18" class="input-datos"name="curp" id="curp" placeholder="Ingrese CURP" required autocomplete="off">
+        <input type="text" class="input-datos"name="user" id="user" placeholder="Ingrese User Login" required autocomplete="off">
+        <input type="text"  max="2100-12-30" maxlength="10" class="input-datos"name="fechanac" id="fechanac" placeholder="Ingrese Fecha De Nacimiento" required autocomplete="off">
+        <input type="text" class="input-datos"name="lugarnac" id="lugarnac" placeholder="Ingrese Lugar De Nacimiento" required autocomplete="off">
+        <input type="text" maxlength="13" class="input-datos"name="rfc" id="rfc" placeholder="Ingrese RFC" required autocomplete="off">
+        <input type="text" class="input-datos"name="calle" id="calle" placeholder="Ingrese Calle" required autocomplete="off">
+        <input type="text" class="input-datos"name="numext" id="numext" placeholder="Ingrese Número Exterior" required autocomplete="off">
+        <input type="text" class="input-datos"name="numint" id="numint" placeholder="Ingrese Número Interior" autocomplete="off">
+        <input type="text" class="input-datos"name="colfracc" id="colfracc" placeholder="Ingrese Colonia O Fraccionamiento" required autocomplete="off">
+        <input type="tel" maxlength="5" class="input-datos"name="cp" id="cp" placeholder="Ingrese Código Postal" required autocomplete="off">
+        <input type="text" class="input-datos"name="entrecalles" id="entrecalles" placeholder="Ingrese Entrecalles" required autocomplete="off">
+        <input type="text" class="input-datos"name="referencias" id="referencias" placeholder="Ingrese Referencias Del Domicilio" required autocomplete="off">
+        <input type="text" class="input-datos"name="del" id="del" placeholder="Ingrese Delegación O Municipio" required autocomplete="off">
+        <input type="text" class="input-datos"name="estado" id="estado" placeholder="Ingrese Estado" required autocomplete="off">
+        <input type="tel" maxlength="10" class="input-datos"name="contactouno" id="contactouno" placeholder="Ingrese Primer Teléfono De Contacto" required autocomplete="off">
+        <input type="tel" maxlength="10" class="input-datos"name="contactodos" id="contactodos" placeholder="Ingrese Segundo Teléfono De Contacto" required autocomplete="off">
+        <input type="email" class="input-datos"name="email" id="email" placeholder="Ingrese Correo Electrónico" required autocomplete="off">
+        <input type="tel"  class="input-datos"name="idine" id="idine" placeholder="Ingrese ID MX" required autocomplete="off">
+        <input type="text" class="input-datos"name="cac" id="cac" placeholder="Ingrese Centro De Atención A Clientes" required autocomplete="off">
+        <input type="text" class="input-datos"name="ejecutivo" id="ejecutivo" placeholder="Ingrese Nombre Del Ejecutivo" required autocomplete="off">
+        <input type="text" class="input-datos"name="validador" id="validador" placeholder="Ingrese Nombre Del Validador" required autocomplete="off">        
+        <div class="btn-accion">
+        <button onclick="ocultarcopiado()" class="boton"type="submit">Mostrar</button>
+        <input onclick="ocultarcopiado()" class="boton" type="reset" value="Limpiar">
+        <span class="invisible" hidden id="copia-p-super"></span>
+        <span class="invisible" hidden id="copia-p-venta"></span>
+        </div>
+    </form>
+    <section class="titulos" id="result">
+        <div class="margen">
+            <label class="layout " id="plann">Plan:</label>
+            <label class="layout marginleft" id="plan-lo"></label>
+        </div>
+        <div>
+            <label class="layout ">DN:</>
+            <label class="layout marginleft capitl" id="dn-lo"></>
+        </div>
+        <div >
+            <label class="layout " >DN (Últimos 4 Dígitos):</>
+            <label class="layout marginleft " id="dn4-lo"></>
+        </div>
+        
+        <div >
+            <label class="layout ">Grabación DN:</>
+            <label class="layout marginleft " id="grabacion-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">FVC:</>
+            <label class="layout marginleft " id="fvc-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">NIP:</>
+            <label class="layout marginleft " id="nip-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Vigencia NIP:</>
+            <label class="layout marginleft " id="vigencia-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Nombre(s):</>
+            <label class="layout marginleft " id="nombres-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Apellido Paterno:</>
+            <label class="layout marginleft " id="apellido-pat-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Apellido Materno:</>
+            <label class="layout marginleft " id="apellido-mat-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">CURP:</>
+            <label class="layout marginleft " id="curp-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">User Login:</>
+            <label class="layout marginleft " id="user-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Fecha de Nacimiento:</>
+            <label class="layout marginleft" id="fechanac-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Lugar de Nacimiento:</>
+            <label class="layout marginleft" id="lugarnac-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">RFC:</>
+            <label class="layout marginleft " id="rfc-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Calle:</>
+            <label class="layout marginleft " id="calle-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Número Exterior:</>
+            <label class="layout marginleft " id="numext-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Número Interior:</>
+            <label class="layout marginleft " id="numint-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Colonia o Fraccionamiento:</>
+            <label class="layout marginleft " id="colfracc-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">CP:</>
+            <label class="layout marginleft " id="cp-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Entrecalles:</>
+            <label class="layout marginleft " id="entrecalles-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Referencias:</>
+            <label class="layout marginleft " id="referencias-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Delegación o Municipio:</>
+            <label class="layout marginleft " id="del-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Estado:</>
+            <label class="layout marginleft " id="estado-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Tel Contacto 1:</>
+            <label class="layout marginleft " id="contactouno-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Tel Contacto 2:</>
+            <label class="layout marginleft " id="contactodos-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Correo Electrónico:</>
+            <label class="layout marginleft " id="email-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">ID INE:</>
+            <label class="layout marginleft " id="idine-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">CAC Movistar:</>
+            <label class="layout marginleft " id="cac-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Ejecutivo:</>
+            <label class="layout marginleft " id="ejecutivo-lo"></>
+        </div>
+
+        <div >
+            <label class="layout ">Validador:</>
+            <label class="layout marginleft " id="validador-lo"></>
+        </div>
+        <div class="btn-copia">
+        <input id="copy-super" onclick="mostrar1()" type="button" class="boton copia" value="📨 Copia Supervisor">
+        <input id="copy-sale" onclick="mostrar2()" type="button" class="boton copia" value="📨 Copia Venta">
+        <label class="copiado1 noselect arriba" id="copiado1">¡Copiado!</label>
+        <label class="copiado2 noselect" id="copiado2">¡Copiado!</label>
+
+            <script>
+                function mostrar1(){
+                    document.getElementById('copiado1').style.color ="white";
+                    document.getElementById('copiado2').style.color ="transparent";
+                    
+                }
+
+                function mostrar2(){
+                   document.getElementById('copiado2').style.color ="white";
+                   document.getElementById('copiado1').style.color ="transparent";
+                }
+
+                function ocultarcopiado(){
+                    document.getElementById('copiado1').style.color ="transparent";
+                    document.getElementById('copiado2').style.color ="transparent";
+                }
+            </script>
+
+        </div>
+    </section>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
