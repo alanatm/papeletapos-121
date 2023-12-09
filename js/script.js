@@ -29,7 +29,7 @@ const emailr = document.getElementById("email-lo");
 const idiner = document.getElementById("idine-lo");
 const cacr = document.getElementById("cac-lo");
 const ejecutivor = document.getElementById("ejecutivo-lo");
-const validadorr = document.getElementById("vali|dador-lo");
+const validadorr = document.getElementById("validador-lo");
 
 //Variables para eventos
 const copiapsuper = document.querySelector("#copia-p-super");
@@ -301,8 +301,7 @@ function validarFormulario(e) {
   const validador = document.querySelector("#validador").value;
   const validadormin = capitalizartexto(validador).replace(
     /[^\x20\x2Da-zA-Z0-9\x5F\xC0-\xD6\xD8-\xF6\xF8-\xFF]/g,
-    ""
-  );
+    "");
   validadorr.textContent = `${validadormin}`; //elimina caracteres especiales exceptuando alfanuméricos como la ñ
 
   //Info para botón copiar
